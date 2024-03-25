@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-style: thin;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+/* Entete */
+
+header{
+    padding: 20px;
+    text-align: right;
+}
+
+header div a{
+    margin: 0 15px;
+    appearance: none;
+}
+
+/* Bandeau */
+
+#titre{
+    background-image: url(../imgs/bandeau.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 150px 0;
+}
+
+#titre h1{
+    margin: 0;
+    font-size: 64px;
+}
+
+/* Section de présentation */
+
+/** Présentation + photo */
+#presentation #haut{
+    display: flex;
+    align-items: center;
+    padding: 100px 300px;
+}
+
+#presentation #haut #contenu{
+    width: 50%;
+}
+
+#presentation #haut #contenu h3{
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#presentation #haut #contenu p{
+    margin: 0;
+}
+
+#presentation #haut #photo{
+    width: 50%;
+    text-align: center;
+}
+
+#presentation #haut #photo img{
+    width: 200px;
+}
+
+/** Citation + qualités */
+#presentation #bas{
+    display: flex;
+}
+
+#presentation #bas #citation{
+    background-color: #6bbfbd;
+    width: 50%;
+    color: white;
+    padding: 100px 30px;
+    padding-left: 300px;
+    display: flex;
+    align-items: center;
+}
+
+#presentation #bas #citation h4{
+    margin: 0;
+    font-size: 30px;
+}
+
+#presentation #bas #qualites{
+    background-color: #eeeeee;
+    width: 50%;
+    font-size: 22px;
+}
+
+/** Liste de qualité */
+#presentation #bas #qualites ol{
+    counter-reset: item;
+    list-style: none;
+    padding: 20px 0;
+    padding-left: 80px;
+}
+
+#presentation #bas #qualites ol li{
+    position: relative;
+    margin: 30px 0;
+    margin-left: 50px;
+}
+
+#presentation #bas #qualites ol li::before{
+    content: "0" counter(item);
+    counter-increment: item;
+    position: absolute;
+    left: -50px;
+    color: #6bbfbd;
+}
+
+#presentation #bas #qualites ol li:nth-child(n+10)::before{
+    content: counter(item);
+}
+
+/* Section des projets */
+
+/* Section des parcours */
+
+/* Section des interets */
+/* background-color: #eeeeee; */
