@@ -125,6 +125,67 @@ header div a{
 /* Section des projets */
 
 /* Section des parcours */
+#parcours{
+    padding: 50px 300px;
+}
+
+#parcours h2{
+    font-size: 28px;
+    margin-top: 0;
+}
+
+#parcours .voie{
+    display: flex;
+    align-items: baseline;
+    position: relative;
+    margin: 30px 0;
+}
+
+#parcours .voie .date{
+    color: #6bbfbd;
+    font-weight: Bold;
+    font-size: 20px;
+    vertical-align: baseline;
+    position: absolute;
+}
+
+#parcours .voie .description{
+    margin-left: 150px;
+}
+
+#parcours .voie .description h5{
+    font-weight: 500;
+    margin: 0;
+}
+
+#parcours .voie .description small{
+    color: #818897;
+    margin: 0;
+}
 
 /* Section des interets */
-/* background-color: #eeeeee; */
+#interets{
+    background-color: #eeeeee;
+    padding: 50px 300px;
+    text-align: center;
+}
+
+#interets h2{
+    font-size: 28px;
+    margin-top: 0;
+}
+
+#interets #boxes{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#interets #boxes .box{
+    padding: 30px 50px;
+    border: solid 1px #dcdee4;
+    border-radius: 4px;
+    background-color: white;
+    color: #6bbfbd;
+}
