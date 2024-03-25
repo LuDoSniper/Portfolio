@@ -20,7 +20,15 @@ header{
 
 header div a{
     margin: 0 15px;
-    appearance: none;
+    text-decoration: none;
+}
+
+header div a:visited{
+    color: initial;
+}
+
+header div a:hover{
+    color: #6bbfbd;
 }
 
 /* Bandeau */
@@ -188,4 +196,22 @@ header div a{
     border-radius: 4px;
     background-color: white;
     color: #6bbfbd;
+}
+
+/* Pied de page */
+
+footer{
+    background-color: #303033;
+    padding: 30px;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+}
+
+footer a:visited{
+    color: initial;
 }
