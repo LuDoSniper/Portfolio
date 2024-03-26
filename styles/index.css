@@ -186,6 +186,66 @@ header div a:hover{
     margin-top: 0;
 }
 
+#projets div:not(.projet){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#projets .projet{
+    width: calc(1366px * 0.25);
+    height: calc(768px * 0.25);
+    background-size: contain;
+    color: white;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+#projets #chomp{
+    background-image: url(../imgs/Chomp.png);
+}
+
+#projets #dongeon_crawler{
+    background-image: url(../imgs/Dungeon_Crawler.png);
+}
+
+#projets #ludine_games{
+    background-image: url(../imgs/Ludine_Games.png);
+}
+
+#projets #haggerim{
+    background-image: url(../imgs/Haggerim.png);
+}
+
+#projets .projet .overlay{
+    opacity: 0;
+    transition: all .3s ease;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+}
+
+#projets .projet:hover .overlay{
+    opacity: 1;
+    background-color: rgb(107, 191, 189, .8);
+}
+
+#projets .projet .overlay h6{
+    margin: 0;
+    font-size: 18px;
+}
+
+#projets .projet .overlay p{
+    margin: 0;
+    font-weight: 200;
+}
+
 /* Section des parcours */
 
 #parcours{
@@ -277,9 +337,10 @@ footer img{
 }
 
 footer a{
-    text-decoration: none;
+    text-decoration: underline;
     color: white;
     font-weight: 200;
+    margin: 0 10px;
 }
 
 footer a:visited{
