@@ -11,6 +11,38 @@ body{
     margin: 0;
 }
 
+/* Fleche */
+
+#fleche{
+    /* display: none; */
+    position: fixed;
+    right: 20px;
+    bottom: 0;
+    transform: translateY(100%);
+    background-color: white;
+    border: solid 1px #303033;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    transition: all .3s ease;
+    opacity: 0;
+    z-index: 2;
+}
+
+#fleche.active{
+    transform: none;
+    bottom: 20px;
+    opacity: 1;
+}
+
+#fleche span{
+    font-size: 40px;
+}
+
 /* Entete */
 
 header{
