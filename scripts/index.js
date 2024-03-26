@@ -26,8 +26,8 @@ document.addEventListener('DOMContentLoaded', function() {
         projet.addEventListener('click', function() {
             if (projet.id === "chomp"){
                 var location = "../ressources/CHOMP_JML.zip";
-            } else if (projet.id === "dungeon_crawler"){
-                var location = "../ressources/Dongeon_Crawler - 0.2.0.2.zip";
+            } else if (projet.id === "dongeon_crawler"){
+                var location = "https://lucien.donnarieix.fr/origine/dongeon-crawler-beta-test.html";
             } else if (projet.id === "ludine_games"){
                 var location = "https://lucien.donnarieix.fr/origine/ludine_games";
             } else if (projet.id === "haggerim"){
