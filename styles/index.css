@@ -16,6 +16,18 @@ body{
 header{
     padding: 20px;
     text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+}
+
+header img{
+    width: 200px;
+}
+
+header div{
+    display: inline-block;
 }
 
 header div a{
@@ -175,6 +187,7 @@ header div a:hover{
 }
 
 /* Section des parcours */
+
 #parcours{
     padding: 50px 300px;
 }
@@ -214,6 +227,7 @@ header div a:hover{
 }
 
 /* Section des interets */
+
 #interets{
     background-color: #eeeeee;
     padding: 50px 300px;
@@ -251,6 +265,15 @@ footer{
     background-color: #303033;
     padding: 30px;
     text-align: center;
+    position: relative;
+}
+
+footer img{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
 }
 
 footer a{
