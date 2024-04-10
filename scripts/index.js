@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Scroll
-    var balisesA = document.querySelectorAll('header div a');
+    var balisesA = document.querySelectorAll('header nav a');
 
     balisesA.forEach(function(baliseA) {
         baliseA.addEventListener('click', function(event) {

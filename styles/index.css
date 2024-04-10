@@ -58,21 +58,21 @@ header img{
     width: 200px;
 }
 
-header div{
+header nav{
     display: inline-block;
 }
 
-header div a{
+header nav a{
     margin: 0 15px;
     text-decoration: none;
     color: #303033;
 }
 
-header div a:visited{
+header nav a:visited{
     color: initial;
 }
 
-header div a:hover{
+header nav a:hover{
     color: #6bbfbd;
 }
 
@@ -101,37 +101,6 @@ header div a:hover{
     padding: 100px 300px;
 }
 
-@media screen and (max-width: 1100px) {
-    #presentation #haut{
-        padding: 100px 200px;
-    }
-}
-
-@media screen and (max-width: 950px) {
-    #presentation #haut{
-        padding: 100px 100px;
-    }
-}
-
-@media screen and (max-width: 720px) {
-    #presentation #haut{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #presentation #haut #contenu{
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    #presentation #haut{
-        padding: 100px 30px;
-    }
-}
-
 #presentation #haut #contenu{
     width: 50%;
 }
@@ -147,12 +116,12 @@ header div a:hover{
 }
 
 #presentation #haut #photo{
-    width: 50%;
+    width: 200px;
     text-align: center;
 }
 
 #presentation #haut #photo img{
-    width: 200px;
+    width: 100%;
 }
 
 /** Citation + qualités */
@@ -210,19 +179,22 @@ header div a:hover{
 /* Section des projets */
 
 #projets{
-    padding: 50px 300px;
+    padding: 50px 0;
 }
 
 #projets h2{
     font-size: 28px;
     margin-top: 0;
+    margin-left: 300px;
 }
 
-#projets div:not(.projet){
+#projets div:not(.projet, .overlay){
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    max-width: 75%;
+    margin: auto;
 }
 
 #projets .projet{
@@ -230,7 +202,7 @@ header div a:hover{
     height: calc(768px * 0.25);
     background-size: contain;
     color: white;
-    margin: 20px 0;
+    margin: 10px;
     cursor: pointer;
 }
 
@@ -377,4 +349,229 @@ footer a{
 
 footer a:visited{
     color: white;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1250px){
+    #interets{
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    #interets p{
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+}
+
+@media screen and (max-width: 1190px){
+    #presentation #bas #citation{
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    #presentation #haut{
+        padding: 100px 200px;
+    }
+
+    #parcours{
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    #parcours h2{
+        margin-left: 150px;
+    }
+
+    #interets p{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 950px){
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #presentation #haut{
+        padding: 100px 100px;
+    }
+
+    #interets{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #interets p{
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #parcours{
+        text-align: center;
+    }
+
+    #parcours h2{
+        margin: auto;
+    }
+
+    #parcours .voie{
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 770px){
+    #projets{
+        text-align: center;
+    }
+
+    #projets h2{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 720px){
+    #presentation #haut{
+        display: flex;
+        flex-direction: column-reverse;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    #presentation #haut #contenu{
+        text-align: left;
+        width: 75%;
+    }
+
+    #presentation #haut #contenu h3{
+        display: inline-block;
+        width: 85px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    #presentation #bas #qualites{
+        padding: 0;
+        padding-left: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #presentation #bas #qualites ol{
+        padding: 0;
+    }
+
+    #parcours{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #interets p{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #interets #boxes{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 650px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 105px;
+    }
+
+    footer img{
+        transform: none;
+        top: initial;
+        bottom: 30px;
+        left: 30px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #presentation #haut{
+        padding: 100px 30px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #projets .projet{
+        width: calc(calc(1366px * 0.25) * 0.75);
+        height: calc(calc(768px * 0.25) * 0.75);
+    }
+}
+
+@media screen and (max-width: 460px){
+    #presentation #bas{
+        flex-direction: column;
+    }
+
+    #presentation #bas #citation, #presentation #bas #qualites{
+        width: 100%;
+    }
+
+    #presentation #bas #citation h4{
+        text-align: center;
+    }
+
+    #parcours .voie{
+        flex-direction: column;
+    }
+
+    #parcours .voie .date{
+        position: relative;
+    }
+
+    #parcours .voie .description{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 390px){
+    #titre h1{
+        font-size: 48px;
+    }
+
+    #presentation #haut #contenu{
+        text-align: center;
+    }
+
+    #presentation #haut #contenu h3{
+        display: block;
+        width: 100%;
+    }
+
+    #projets .projet{
+        width: calc(calc(calc(1366px * 0.25) * 0.75) * 0.75);
+        height: calc(calc(calc(768px * 0.25) * 0.75) * 0.75);
+    }
+
+    #projets .projet .overlay h6{
+        font-size: 14px;
+    }
+
+    #projets .projet .overlay p{
+        font-size: 12px;
+    }
 }
