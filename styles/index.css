@@ -201,9 +201,13 @@ header nav a:hover{
     width: calc(1366px * 0.25);
     height: calc(768px * 0.25);
     background-size: contain;
-    color: white;
     margin: 10px;
     cursor: pointer;
+}
+
+#projets .projet *{
+    text-decoration: none;
+    color: white;
 }
 
 #projets #chomp{

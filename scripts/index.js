@@ -19,24 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Projets
-    var projets = document.querySelectorAll('#projets .projet');
-
-    projets.forEach(function(projet) {
-        projet.addEventListener('click', function() {
-            if (projet.id === "chomp"){
-                var location = "../ressources/CHOMP_JML.zip";
-            } else if (projet.id === "dongeon_crawler"){
-                var location = "https://lucien.donnarieix.fr/origine/dongeon-crawler-beta-test.html";
-            } else if (projet.id === "ludine_games"){
-                var location = "https://lucien.donnarieix.fr/origine/ludine_games";
-            } else if (projet.id === "haggerim"){
-                var location = "https://haggerim.donnarieix.fr";
-            }
-            window.location.href = location;
-        });
-    });
-
     // Fleche
     var fleche = document.getElementById('fleche');
     fleche.addEventListener('click', function() {
