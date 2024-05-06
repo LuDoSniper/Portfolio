@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Window ScrollY
     document.addEventListener('scroll', function() {
         // Toggle-nav
-        if (window.scrollY > 100){
+        if ((window.screen.width <= 950 && window.scrollY > 200) || (window.screen.width > 950 && window.scrollY > 100)){
             // Toggle-nav
             toggle_nav.classList.add('active');
 

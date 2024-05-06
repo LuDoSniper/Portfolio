@@ -504,12 +504,32 @@ footer a:visited{
 }
 
 @media screen and (max-width: 950px){
-    header{
+    #toggle-nav.up{
+        top: 0;
+    }
+    
+    #toggle-nav.down{
+        top: 183px;
+    }
+
+    #nav{
+        top: -184px;
+    }
+    
+    #nav.hide{
+        top: -184;
+    }
+    
+    #nav.show{
+        top: 0;
+    }
+
+    header, #nav{
         flex-direction: column;
         align-items: flex-start;
     }
 
-    header nav{
+    header nav, #nav nav{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
