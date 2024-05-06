@@ -6,17 +6,32 @@
     <title>portfolio</title>
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-</head>
 <body>
     <header>
         <img src="imgs/Logo.png" alt="Logo de Lucien Donnarieix">
-        <nav>
+        <nav role="navigation">
             <a href="#presentation">MA PRESENTATION</a>
             <a href="#projets">MES PROJETS</a>
             <a href="#parcours">MON PARCOURS</a>
             <a href="#interets">MES CENTRES D'INTERETS</a>
         </nav>
     </header>
+    <div class="hide" id="nav">
+        <img src="imgs/Logo.png" alt="Logo de Lucien Donnarieix">
+        <nav role="navigation">
+            <a href="#presentation">MA PRESENTATION</a>
+            <a href="#projets">MES PROJETS</a>
+            <a href="#parcours">MON PARCOURS</a>
+            <a href="#interets">MES CENTRES D'INTERETS</a>
+        </nav>
+    </div>
+
+    <div id="toggle-nav" class="up">
+        <div class="overlay">
+            <div class="arrow left up"></div>
+            <div class="arrow right up"></div>
+        </div>
+    </div>
 
     <div id="fleche">
         <span class="material-symbols-outlined">arrow_upward</span>
